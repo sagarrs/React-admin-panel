@@ -2,6 +2,8 @@ import "./Home.scss"
 import {Sidebar} from '../Sidebar/Sidebar'
 import { Navbar } from "../Navbar/Navbar"
 import {Widget} from '../Widget/Widget'
+import { FeaturedChart } from "../FeaturedCharts/FeaturedChart"
+import { Chart } from "../Charts/Chart"
 
 export const Home = () => {
     return(
@@ -14,6 +16,10 @@ export const Home = () => {
                     <Widget type="order"/>
                     <Widget type="earnings"/>
                     <Widget type="balance"/>
+                </div>
+                <div className="charts">
+                    <FeaturedChart/>
+                    <Chart/>
                 </div>
             </div>
         </div>
