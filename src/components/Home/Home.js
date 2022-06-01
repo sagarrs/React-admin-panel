@@ -4,6 +4,7 @@ import { Navbar } from "../Navbar/Navbar"
 import {Widget} from '../Widget/Widget'
 import { FeaturedChart } from "../FeaturedCharts/FeaturedChart"
 import { Chart } from "../Charts/Chart"
+import { List } from "../Table/Table"
 
 export const Home = () => {
     return(
@@ -20,6 +21,10 @@ export const Home = () => {
                 <div className="charts">
                     <FeaturedChart/>
                     <Chart/>
+                </div>
+                <div className="listContainer">
+                    <div className="listTitle">Latest transactions</div>
+                    <List/>
                 </div>
             </div>
         </div>
