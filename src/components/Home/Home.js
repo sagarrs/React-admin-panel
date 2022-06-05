@@ -20,7 +20,7 @@ export const Home = () => {
                 </div>
                 <div className="charts">
                     <FeaturedChart/>
-                    <Chart/>
+                    <Chart title="Last 6 months revenue"/>
                 </div>
                 <div className="listContainer">
                     <div className="listTitle">Latest transactions</div>
