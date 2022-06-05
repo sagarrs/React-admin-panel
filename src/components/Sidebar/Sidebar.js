@@ -11,12 +11,15 @@ import StorageOutlinedIcon from '@mui/icons-material/StorageOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlined';
 import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+import {Link} from "react-router-dom"
 
 export const Sidebar = () => {
     return(
         <div className="sidebar">
             <div className="top">
-                <span className="logo">sagar admin</span>
+                <Link to="/" style={{textDecoration: "none"}}>
+                    <span className="logo">sagar admin</span>
+                </Link>
             </div>
             <hr/>
             <div className="center">
@@ -27,14 +30,20 @@ export const Sidebar = () => {
                         <span>Dashboard</span>
                     </li>
                     <p className="title">LISTS</p>
-                    <li>
-                        <AccountCircleOutlinedIcon className="icon"/>
-                        <span>Users</span>
-                    </li>
-                    <li>
-                        <Inventory2OutlinedIcon className="icon"/>
-                        <span>Products</span>
-                    </li>
+                    <Link to="/users" style={{textDecoration: "none"}}>
+                        <li>
+                            <AccountCircleOutlinedIcon className="icon"/>
+                            <span>Users</span>
+                        </li>
+                    </Link>
+
+                    <Link to="/products" style={{textDecoration: "none"}}>
+                        <li>
+                            <Inventory2OutlinedIcon className="icon"/>
+                            <span>Products</span>
+                        </li>
+                    </Link>
+                    
                     <li>
                         <ShoppingBagOutlinedIcon className="icon"/>
                         <span>Orders</span>
