@@ -12,11 +12,9 @@ import { DarkModeContext } from './Context/darkModeContext';
 function App() {
   const { darkMode } = useContext(DarkModeContext);
 
-  console.log("DDD", darkMode)
-
   return (
     <div className={darkMode ? "app dark" : "app"}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
 
           <Route path='/'>
