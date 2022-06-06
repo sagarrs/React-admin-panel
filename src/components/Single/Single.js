@@ -41,7 +41,7 @@ export const Single = () => {
 
                     <div className="right">
                         <Chart 
-                            height={300}
+                            // height={300}
                             // aspect={2 / 1} 
                             title="User spending last 6 months"/>
                     </div>
