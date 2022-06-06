@@ -40,7 +40,10 @@ export const Single = () => {
                     </div>
 
                     <div className="right">
-                        <Chart aspect={2 / 1} title="User spending last 6 months"/>
+                        <Chart 
+                            height={300}
+                            // aspect={2 / 1} 
+                            title="User spending last 6 months"/>
                     </div>
                 </div>
 
